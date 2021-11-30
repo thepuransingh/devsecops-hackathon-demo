@@ -88,7 +88,8 @@ pipeline {
     }
     
     /* if Rollout code not working then uncomment the below code */
-    /* stage('Kubernetes Deployment - DEV') {
+    
+    stage('Kubernetes Deployment - DEV') {
      steps {
         withKubeConfig([credentialsId: 'kubeconfig']) {
           sh "sed -i 's#replace#siddharth67/numeric-app:${GIT_COMMIT}#g' k8s_deployment_service.yaml"
@@ -97,10 +98,10 @@ pipeline {
       }
     }
     
-  } */
+  } 
   
   /* This is rollout code, comment this if not working and uncomment the above code */  
-  stage('K8S Deployment - DEV') {
+  /* stage('K8S Deployment - DEV') {
       steps {
         parallel(
           "Deployment": {
@@ -116,7 +117,7 @@ pipeline {
         )
       }
     }
-  } 
+  } */
   
     post {
     always {
