@@ -72,18 +72,18 @@ pipeline {
       }
     }
     
-    // stage('Kubernetes Deployment - DEV') {
-      // steps {
-    //    withKubeConfig([credentialsId: 'kubeconfig']) {
-    //      sh "sed -i 's#replace#siddharth67/numeric-app:${GIT_COMMIT}#g' k8s_deployment_service.yaml"
-    //      sh "kubectl apply -f k8s_deployment_service.yaml"
-   //     }
-  //    }
- //   }
+     stage('Kubernetes Deployment - DEV') {
+     steps {
+        withKubeConfig([credentialsId: 'kubeconfig']) {
+          sh "sed -i 's#replace#siddharth67/numeric-app:${GIT_COMMIT}#g' k8s_deployment_service.yaml"
+          sh "kubectl apply -f k8s_deployment_service.yaml"
+        }
+      }
+    }
     
- // }
+  }
   
-  stage('K8S Deployment - DEV') {
+  /* stage('K8S Deployment - DEV') {
       steps {
         parallel(
           "Deployment": {
@@ -99,8 +99,8 @@ pipeline {
         )
       }
     }
-
-  }
+  } */
+  
     post {
     always {
       junit 'target/surefire-reports/*.xml'
