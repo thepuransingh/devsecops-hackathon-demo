@@ -32,7 +32,7 @@ pipeline {
         }
       }
     }
-    
+    // delete this text its for testing
     
     //    stage('Vulnerability Scan - Docker ') {
     //      steps {
