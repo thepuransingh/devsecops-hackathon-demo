@@ -66,7 +66,7 @@ pipeline {
       	}
       }
       
-    
+    /* This is temp comment */
     
    /* stage('Vulnerability Scan - Kubernetes') {
       steps {
