@@ -4,8 +4,8 @@ pipeline {
     deploymentName = "devsecops"
     containerName = "devsecops-container"
     serviceName = "devsecops-svc"
-    imageName = "siddharth67/numeric-app:${GIT_COMMIT}"
-    applicationURL = "http://devsecops-demo.eastus.cloudapp.azure.com"
+    imageName = "thepuransingh/numeric-app:${GIT_COMMIT}"
+    applicationURL = "http://devsecopshackathon2021.eastus.cloudapp.azure.com"
     applicationURI = "/increment/99"
   }
   
