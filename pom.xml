@@ -43,6 +43,12 @@
 		   <artifactId>springdoc-openapi-ui</artifactId>
 		   <version>1.2.30</version>
 		</dependency>
+		
+		<dependency>
+		   <groupId>org.springframework.boot</groupId>
+		   <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -54,7 +60,6 @@
 			<!--                   Maven Compiler Plugin                   -->
 			<plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version><!--$NO-MVN-MAN-VER$-->
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
