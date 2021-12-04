@@ -51,6 +51,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!--                   Maven Compiler Plugin                   -->
+			<plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version><!--$NO-MVN-MAN-VER$-->
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
 			<!--                   Jacoco Plugin                   -->
 			<plugin>
 			   <groupId>org.jacoco</groupId>
