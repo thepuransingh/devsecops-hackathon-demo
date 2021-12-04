@@ -43,14 +43,15 @@
 		   <artifactId>springdoc-openapi-ui</artifactId>
 		   <version>1.2.30</version>
 		</dependency>
+	</dependencies>
+	
 		<!-- This is for OWSAP ZAP security, giving error... 
 		<dependency>
 		   <groupId>org.springframework.boot</groupId>
 		   <artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		-->
-	</dependencies>
-
+	
 	<build>
 		<plugins>
 			<plugin>
