@@ -101,7 +101,7 @@ pipeline {
       }
     }
     
-  } 
+   
   
   /* This is rollout code, comment this if not working and uncomment the above code */  
   /* stage('K8S Deployment - DEV') {
@@ -130,7 +130,7 @@ pipeline {
       }
     }
 
-  
+  }
   
     post {
     always {
