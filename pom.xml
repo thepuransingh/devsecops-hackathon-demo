@@ -38,19 +38,9 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-		   <groupId>org.springdoc</groupId>
-		   <artifactId>springdoc-openapi-ui</artifactId>
-		   <version>1.2.30</version>
-		</dependency>
+		
 	</dependencies>
-	
-		<!-- This is for OWSAP ZAP security, giving error... 
-		<dependency>
-		   <groupId>org.springframework.boot</groupId>
-		   <artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		-->
+
 	
 	<build>
 		<plugins>
@@ -58,14 +48,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!--                   Maven Compiler Plugin                   -->
-			<plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
+			
 			<!--                   Jacoco Plugin                   -->
 			<plugin>
 			   <groupId>org.jacoco</groupId>
