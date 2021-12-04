@@ -122,6 +122,7 @@ pipeline {
     }
   } */
   
+  /* This code is to Dynamic Application Security Test - Comment this if failing */
   stage('OWASP ZAP - DAST') {
       steps {
         withKubeConfig([credentialsId: 'kubeconfig']) {
@@ -130,7 +131,8 @@ pipeline {
       }
     }
 
-  }
+  
+  } 
   
     post {
     always {
