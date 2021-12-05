@@ -1,3 +1,4 @@
+@Library('slack') _
 pipeline {
   agent any
   environment {
@@ -131,6 +132,15 @@ pipeline {
     }
   } */
   
+  /*---------- SLACK Notifications--------------- */
+  stages {
+    stage('Testing Slack') {
+      steps {
+        sh 'exit 1'
+      }
+    }
+
+  }
     
   } 
   
@@ -140,7 +150,8 @@ pipeline {
       jacoco execPattern: 'target/jacoco.exec'
       pitmutation mutationStatsFile: '**/target/pit-reports/**/mutations.xml'
       dependencyCheckPublisher pattern: 'target/dependency-check-report.xml'
-      
+      // Use sendNotifications.groovy from shared library and provide current build result as parameter    
+      sendNotification currentBuild.result
     }
 
     // success {
