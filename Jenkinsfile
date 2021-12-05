@@ -133,15 +133,14 @@ pipeline {
   } */
   
   /*---------- SLACK Notifications--------------- */
-  stages {
-    stage('Testing Slack') {
-      steps {
-        sh 'exit 1'
-      }
-    }
-
-  }
-    
+  
+	  stage('Slack') {
+	      steps {
+	        sh 'exit 1'
+	      }
+	    }
+	
+ 
   } 
   
     post {
