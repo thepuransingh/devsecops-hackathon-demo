@@ -80,8 +80,7 @@
 			    </configuration>
 			</plugin>
 			
-			
-			
+				
 			<!--                   Jacoco Plugin                   -->
 			<plugin>
 			   <groupId>org.jacoco</groupId>
