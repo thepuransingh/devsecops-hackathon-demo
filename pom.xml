@@ -38,6 +38,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 		   <groupId>org.springdoc</groupId>
 		   <artifactId>springdoc-openapi-ui</artifactId>
@@ -47,11 +48,7 @@
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-config</artifactId>
-		    
 		</dependency>
-		
-	
-		
 	</dependencies>
 
 	
@@ -114,7 +111,7 @@
 			      </dependency>
 			   </dependencies>
 			   <configuration>
-			      <mutationThreshold>60</mutationThreshold>
+			      <mutationThreshold>0</mutationThreshold>
 			      <outputFormats>
 			         <outputFormat>XML</outputFormat>
 			         <outputFormat>HTML</outputFormat>
