@@ -189,25 +189,11 @@ pipeline {
       sendNotification currentBuild.result
     }
 
-    /*
-    success {
-      script {
-        /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
-        env.failedStage = "none"
-        env.emoji = ":white_check_mark: :tada: :thumbsup_all:"
-        sendNotification currentBuild.result
-      }
-    }
-    unstable {
-      script {
-        /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
-        env.failedStage = "none"
-        env.emoji = ":uside_down_face: :thinking_face: :writing_hand:"
-        sendNotification currentBuild.result
-      }
-    }
-    */
-
+    
+    //success {
+      
+    //}
+    
     // failure {
 
     // }
