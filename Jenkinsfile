@@ -189,6 +189,7 @@ pipeline {
       sendNotification currentBuild.result
     }
 
+    /*
     success {
       script {
         /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
@@ -205,7 +206,7 @@ pipeline {
         sendNotification currentBuild.result
       }
     }
-    
+    */
 
     // failure {
 
