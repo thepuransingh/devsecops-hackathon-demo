@@ -23,7 +23,7 @@ pipeline {
         sh "mvn test"
       }
     }
-   /* temp comment 8?
+   
   stage('Mutation Tests - PIT') {
       steps {
         sh "mvn org.pitest:pitest-maven:mutationCoverage"
