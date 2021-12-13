@@ -29,6 +29,14 @@ pipeline {
         sh "mvn org.pitest:pitest-maven:mutationCoverage"
       }
    }
+   
+   /* ----------- OWASP Scan for dependencies ------------ */
+   stage('Vulnerability Scan - OWASP ') {
+          steps {
+             sh "mvn dependency-check:check"   
+            }
+     }
+   /* ----------- OWASP Scan for dependencies ------------ */
     
     stage('SonarQube - SAST') {
       steps {
